@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:interop="using:Windows.UI.Xaml.Interop">
+    
+    <ControlTemplate x:Key="MoveThumbTemplate" TargetType="Thumb">
+        <Ellipse Width="20" Height="20" Name="ellipse" Fill="Blue"/>
+    </ControlTemplate>
+
+    
+</ResourceDictionary>

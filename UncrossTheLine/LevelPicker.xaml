@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="UncrossTheLine.LevelPicker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UncrossTheLine"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Background="Coral">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Select a level to jump to:" FontSize="30" VerticalAlignment="Center" Margin="10,0,0,0"></TextBlock>
+                <TextBox VerticalAlignment="Center" Margin="30,0,0,0" Width="300"></TextBox>
+            </StackPanel>
+            
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="1" Content="Jump" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100"></Button>
+                <Button Grid.Column="2" Content="Cancel" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
